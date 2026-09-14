@@ -17,7 +17,8 @@ export const GET: APIRoute = () => {
 - [What Does Fiber Connectivity Really Cost?](${SITE.url}/articles/what-does-fiber-connectivity-really-cost): Understanding the true investment and TCO of dedicated fiber optic connectivity
 - [5 Signs Your Business Needs Virtual Fax](${SITE.url}/articles/5-signs-you-need-virtual-fax): Discover when to eliminate analog phone lines and switch to secure cloud fax
 - [How SIP Trunking Reduces Phone Costs for Multi-Location Businesses](${SITE.url}/articles/sip-trunking-what-every-homeowner-should-know): Centralizing voice infrastructure to eliminate redundant phone lines
-- [Service Areas](${SITE.url}/service-areas): Service coverage directory across Clarkston, Metro Detroit, Oakland County, and Michigan
+- [Service Areas](${SITE.url}/service-areas): Service coverage directory across Michigan and in Reading, Pennsylvania
+- [Reading, PA](${SITE.url}/service-areas/reading/): Business phone, internet, FaxBridge, and IT services for Reading businesses
 `;
 
   return new Response(content, {

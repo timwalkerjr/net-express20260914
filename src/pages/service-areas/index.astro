@@ -17,7 +17,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'Service',
     name: 'Net Express Business Phone, Internet & IT Service Coverage',
-    description: 'Service area coverage across Michigan for business phone systems, dedicated fiber, cloud fax, and IT management.',
+    description: 'Business phone, internet, cloud fax, and IT service coverage across Michigan and in Reading, Pennsylvania.',
     provider: {
       '@type': 'LocalBusiness',
       name: 'Net Express',
@@ -56,8 +56,8 @@ const jsonLd = [
 ---
 
 <BaseLayout
-  title="Michigan Service Areas — Business Phone, Fiber & IT | Net Express"
-  description="Explore Net Express business phone, high-speed fiber internet, FaxBridge, and managed IT service coverage across Clarkston, Metro Detroit, Oakland County, and Michigan."
+  title="Michigan & Reading, PA Service Areas | Net Express"
+  description="Explore Net Express business phone, internet, FaxBridge, and IT services across Michigan and in Reading, PA. Check service availability for your address."
   jsonLd={jsonLd}
 >
   <!-- Hero Section -->
@@ -68,16 +68,16 @@ const jsonLd = [
       <div class="flex items-center gap-2 mb-3" data-ps="src/pages/service-areas/index.astro:rpaqrq">
         <span class="w-4 h-[2px] bg-[#94e760]" data-ps="src/pages/service-areas/index.astro:3jggox"></span>
         <span class="text-[#94e760] text-[13.6px] font-semibold tracking-wider uppercase" data-ps="src/pages/service-areas/index.astro:3jggow">
-          Michigan Coverage Map & Areas
+          Service Areas & Coverage
         </span>
       </div>
 
       <h1 class="text-[38px] sm:text-[50px] font-extrabold text-white leading-[1.08] tracking-[-1.5px] max-w-[880px] mb-5" data-ps="src/pages/service-areas/index.astro:f61gf1">
-        Business Phone, Dedicated Fiber & IT Across Michigan
+        Business Phone, Internet & IT in Michigan & Reading, PA
       </h1>
       
       <p class="text-[#9fb1c2] text-[18px] sm:text-[19.5px] leading-relaxed max-w-[760px] mb-8" data-ps="src/pages/service-areas/index.astro:xejiu9">
-        Headquartered in Clarkston, Net Express provides carrier-grade telecom and local IT support for businesses across Southeast Michigan, West Michigan, and throughout the state.
+        Headquartered in Clarkston, Michigan, Net Express serves businesses across Michigan and in Reading, Pennsylvania. Contact us to confirm service options for your business address.
       </p>
 
       <!-- Quick Highlights Bar -->
@@ -148,10 +148,10 @@ const jsonLd = [
             <div class="space-y-2 py-4 border-t border-b border-white/[0.06] mb-6 text-[13.5px]" data-ps={`src/pages/service-areas/index.astro:rpaqtg-${__psIdx}`}>
               <div class="flex items-center justify-between" data-ps={`src/pages/service-areas/index.astro:rpaqth-${__psIdx}`}>
                 <span class="text-[#9fb1c2]" data-ps={`src/pages/service-areas/index.astro:3jggot-${__psIdx}`}>Fiber Internet:</span>
-                <span class="text-white font-semibold" data-ps={`src/pages/service-areas/index.astro:3jggos-${__psIdx}`}>{area.data.fiberAvailable ? 'Up to ' + area.data.maxSpeed : 'Broadband Available'}</span>
+                <span class="text-white font-semibold" data-ps={`src/pages/service-areas/index.astro:3jggos-${__psIdx}`}>{area.data.fiberAvailable ? 'Up to ' + area.data.maxSpeed : 'Check availability'}</span>
               </div>
               <div class="flex items-center justify-between" data-ps={`src/pages/service-areas/index.astro:rpaqti-${__psIdx}`}>
-                <span class="text-[#9fb1c2]" data-ps={`src/pages/service-areas/index.astro:3jggor-${__psIdx}`}>Local Dispatch:</span>
+                <span class="text-[#9fb1c2]" data-ps={`src/pages/service-areas/index.astro:3jggor-${__psIdx}`}>Installation:</span>
                 <span class="text-white font-semibold" data-ps={`src/pages/service-areas/index.astro:3jggo5-${__psIdx}`}>{area.data.deliveryTime}</span>
               </div>
               <div class="flex items-center justify-between" data-ps={`src/pages/service-areas/index.astro:rpaqtj-${__psIdx}`}>
