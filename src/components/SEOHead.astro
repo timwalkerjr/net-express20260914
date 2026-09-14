@@ -43,7 +43,7 @@ const autoImage = (ACCOUNT_ID && SITE_ID)
 const finalImage = image || autoImage;
 
 // Use provided canonical URL or generate from current path
-const finalCanonicalURL = canonicalUrl || new URL(Astro.url.pathname, SITE.url).toString();
+const finalCanonicalURL = new URL(canonicalUrl || Astro.url.pathname, SITE.url).toString();
 const ogImageURL = finalImage.startsWith('http') ? finalImage : new URL(finalImage, SITE.url).toString();
 ---
 

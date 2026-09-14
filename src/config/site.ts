@@ -5,7 +5,7 @@ export const SITE = {
   lang: 'en',
   url:
     (typeof process !== 'undefined' && process.env.SITE_URL) ||
-    'https://gonetexpress.netlify.app',
+    'https://gonetexpress.com',
   twitterHandle: '@gonetexpress',
   socials: {
     twitter: 'https://twitter.com/gonetexpress',
