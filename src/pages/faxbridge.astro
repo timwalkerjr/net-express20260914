@@ -1,0 +1,46 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import FaxbridgeHero from '@/components/faxbridge/FaxbridgeHero.astro';
+import FaxbridgeFeatures from '@/components/faxbridge/FaxbridgeFeatures.astro';
+import FaxbridgeHowItWorks from '@/components/faxbridge/FaxbridgeHowItWorks.astro';
+import FaxbridgePricing from '@/components/faxbridge/FaxbridgePricing.astro';
+import FaxbridgeCta from '@/components/faxbridge/FaxbridgeCta.astro';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'FaxBridge',
+  description: 'Internet-enable your existing fax machine with FaxBridge. Send and receive faxes over your internet connection with secure cloud storage.',
+  brand: {
+    '@type': 'Brand',
+    name: 'Net Express',
+  },
+  offers: [
+    {
+      '@type': 'Offer',
+      price: '99.00',
+      priceCurrency: 'USD',
+      description: 'One-time device cost, plus shipping & handling',
+    },
+    {
+      '@type': 'Offer',
+      price: '15.00',
+      priceCurrency: 'USD',
+      description: 'Monthly service per active device',
+    },
+  ],
+};
+---
+
+<BaseLayout
+  title="FaxBridge — Internet-Enable Your Fax Machine | Net Express"
+  description="FaxBridge from Net Express internet-enables your existing fax machine — send and receive faxes over your internet connection with secure cloud storage. $99 device, no dedicated fax line."
+  jsonLd={jsonLd}
+  canonicalUrl="/faxbridge/"
+>
+  <FaxbridgeHero />
+  <FaxbridgeFeatures />
+  <FaxbridgeHowItWorks />
+  <FaxbridgePricing />
+  <FaxbridgeCta />
+</BaseLayout>
